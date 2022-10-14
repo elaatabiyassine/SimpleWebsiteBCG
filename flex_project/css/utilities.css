@@ -1,0 +1,169 @@
+.text-primary{
+    color: #00be71;
+}
+.text-secondary{
+    color:#424242;
+}
+
+/* Buttons */
+
+.btn{
+    padding: 10px 30px;
+    border-style: none;
+    
+}
+
+.btn-primary {
+    background-color: white;
+    color: #00be71;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: "Poppins" , sans-serif;
+    text-align: center;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.bg-primary{
+    background-color: white;
+    color: #00be71;
+}
+.btn-secondary , .bg-secondary{
+    background-color : #00be71;
+    color: white;
+}
+.bg-dark{
+    background-color: #424242;
+    color: white;
+}
+
+.btn-primary:hover{
+    background-color: green;
+    color: white;
+}
+
+/* Flex items */
+
+.flex-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-columns .flex-reverse .row{
+    flex-direction: row-reverse;
+}
+
+
+.flex-items > div {
+    padding: 20px;
+}
+
+/* Flex Columns */
+
+
+.flex-columns .row
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%
+
+}
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+    
+    
+}
+.flex-columns .column .column-1,
+.flex-columns .column .column-2
+{   height: 100%;
+    
+}
+
+.flex-columns .column img{
+    height: 100%;
+    width: 100%;
+   
+}
+
+.flex-columns .column .column-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section Header */
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #424242;
+    color: white;
+}
+
+.section-header-secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 10px;
+    margin-bottom: 15px;
+    background-color: #00be71;
+    color: white;
+}
+
+.section-header h2{
+    padding: 20px , 10px;
+    font-size: 40px;
+}
+
+
+
+/* Flex grid */
+.flex-grid .row{
+    display : flex;
+    flex-wrap: wrap;
+   
+}
+
+
+.flex-grid .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 10px;
+    height: 100%;
+}
+
+.flex-grid .column img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media(max-width: 768px) {
+    .flex-items {
+        flex-direction: column;
+    }
+    .flex-columns .row{
+        flex-direction: column;
+    }
+    .flex-columns .column .column-2{
+        padding: 10px 20px;
+    }
+    .flex-columns .column h2{
+        text-align: center;
+    }
+    
+    
+
+}
