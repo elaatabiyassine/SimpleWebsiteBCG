@@ -6,6 +6,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
+    padding-top: 70px;
 }
 ul{
     list-style: none;
@@ -163,9 +164,12 @@ ul{
 }
 
 @media(max-width: 768px) {
+    body{
+        padding-top: 50px;
+    }
     .navbar{
         justify-content: center;
-        height: 35px;
+        height: 50px;
         font-size: small;
     }
 
